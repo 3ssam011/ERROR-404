@@ -21,8 +21,6 @@ class teacher extends user
     {
         
     }
-
-
     public function GiveFeed()
     {
         
