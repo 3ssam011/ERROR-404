@@ -14,7 +14,7 @@
             <div id="Welcome">
                 <p>
                     <h1>
-                        Welcome To School System 2
+                        Welcome To School System 25
                     </h1>                
                 </p>
             </div>
