@@ -1,0 +1,23 @@
+#Welcome{
+    text-align: center;
+ }
+ body{
+     background-color: aquamarine;
+     
+ }
+ 
+ #Pass_TextBox{
+     margin-left: 10%;
+ }
+ #password{
+     margin-top: 2%;
+ }
+ #ID_TextBox{
+     margin-left: 14%;
+ }
+ #supmit{
+     margin: 2%;
+ }
+ #choose{
+     margin-bottom: 2%;
+ }
