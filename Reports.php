@@ -1,8 +1,9 @@
 <?php
 include_once"manager.php";
 
-class SendRep 
+ class SendRep
  {
    public $discription;
  }
+ 
 ?>
