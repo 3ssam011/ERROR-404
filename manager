@@ -1,0 +1,38 @@
+<?php
+include_once"C:\wamp64\www\ERROR404\user.php";
+include_once"C:/wamp64/www/ERROR404/CRUD.php";
+class manager extends login
+{
+    public function HireUser($t,$name,$pass,$email,$DOB)
+    {
+        if($t=="teacher")
+        {
+            $filename="teacher.txt";
+            $this->Fullname=$name;
+            $this->ID=getLastId($filename, '~')+1;
+            $this->Password=$pass;
+            $this->type=$t;
+            $this->email=$email;
+            $this->DOB=$DOB;
+            ADD($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
+        }
+    }
+    public function FiresUser($t,$name,$pass,$email,$DOB,$id)
+    {
+        if($t=="teacher")
+        {
+            $filename="teacher.txt";
+            $this->Fullname=$name;
+            $this->ID=$id;
+            $this->Password=$pass;
+            $this->type=$t;
+            $this->email=$email;
+            $this->DOB=$DOB;
+            $record= $this->ID.'~'.$this->Fullname.'~'.$this->Password.'~'. $this->email.'~'. $this->DOB;
+            DeleteRecord($filename, $record);
+        }
+    }
+
+}
+
+?>
