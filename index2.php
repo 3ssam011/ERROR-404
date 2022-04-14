@@ -11,9 +11,9 @@
 <body>
     <form class="box" action="login.php" method="POST">
         <h1> login </h1>
-        <input type="text" name="" placeholder="Enter username" id="username" require>
-        <input type="password" name="" placeholder="Enter password" id="password"require>
-        <input type="submit" name="" vale="login">
+        <input type="text" name="ID" placeholder="Enter ID" id="username" require>
+        <input type="password" name="Password" placeholder="Enter password" id="password"require>
+        <input type="submit"  vale="login">
     </form>
 </body>
 

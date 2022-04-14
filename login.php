@@ -2,8 +2,8 @@
 include_once"manager.php";
 $ID=$_POST['ID'];
 $password=$_POST['Password'];
-$type=$_POST['type'];
-echo'hi';
+//$type=$_POST['type'];
+$type='M';
 if($type=='M')
 {
     $filename="manager.txt";
