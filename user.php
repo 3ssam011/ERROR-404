@@ -1,6 +1,6 @@
 <?php
 include_once"CRUD.php";
-class login
+class user
 {
   public  $Fullname;
   public $ID;
@@ -17,7 +17,6 @@ class login
       $ArrayLine = explode('~', $line);
       if($pass==$ArrayLine[2])
       {
-        
         return $line;
       }
       else{
