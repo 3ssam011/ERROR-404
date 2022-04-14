@@ -1,12 +1,8 @@
 <?php
 include_once"teacher.php";
-public class Positive()
+class t
 {
-
+   public $t;
 }
 
-public class Negative()
-{
-
-}
 ?>
