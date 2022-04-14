@@ -20,7 +20,7 @@
             </div>
         </head>
         
-            <form action="login/login.php" method="POST">
+            <form action="login.php" method="POST">
                 <div id="choose">
                     <label for="Teacher"> Teacher</label>
                     <input type="radio" name="type" value="T">
