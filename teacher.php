@@ -21,12 +21,6 @@ class teacher extends user
     {
         
     }
-
-    public function CorrectQuiz()
-    {
-        
-    }
-
     public function GiveFeed()
     {
         

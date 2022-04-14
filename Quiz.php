@@ -1,11 +1,11 @@
 <?php
 include_once"teacher.php";
 include_once"student.php";
-public class Quiz()
+ class Quiz
 {
-    $type;
-    $grade;
-    $question;
-    $answer;
+    public  $type;
+     public $grade;
+     public $question;
+     public $answer;
 }
 ?>
