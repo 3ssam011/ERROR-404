@@ -17,7 +17,7 @@ class login
       $ArrayLine = explode('~', $line);
       if($pass==$ArrayLine[2])
       {
-        echo$line;
+        
         return $line;
       }
       else{
