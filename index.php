@@ -14,11 +14,8 @@
             <div id="Welcome">
                 <p>
                     <h1>
-<<<<<<< HEAD
-                        Welcome To School System 12
-=======
+
                         Welcome To School System 
->>>>>>> edeaff0ec89ab35879b62fd6eedb9fd80f0ee841
                     </h1>                
                 </p>
             </div>
