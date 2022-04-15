@@ -10,13 +10,15 @@ class user
   private $DOB;
   public function log($filename,$id,$pass)
   {
-    $line=getRowById($filename, '~', $id);
+	  
+    $line=getRowById($filename, '~',$id);
     $line2=searchUser($filename,$pass);
     if($line==$line2)
     {
       $ArrayLine = explode('~', $line);
       if($pass==$ArrayLine[2])
       {
+		  echo'yes';
         return $line;
       }
       else{
