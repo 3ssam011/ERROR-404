@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Managment System</title>
-    <link rel="stylesheet" href="login2.css" title="style">
+    <link rel="stylesheet" href="login22.css" title="style">
 </head>
 
 <body>
@@ -14,7 +14,16 @@
         <input type="text" name="ID" placeholder="Enter ID" id="username" require>
         <input type="password" name="Password" placeholder="Enter password" id="password"require>
         <input type="submit"  vale="login">
-    </form>
-</body>
 
+        <label id= fontcolor for="Teacher"> Teacher</label>
+        <input type="radio" name="type" value="T">
+        <label id= fontcolor for="Student">Student</label>
+        <input type="radio" name="type" value="S">
+        <label id= fontcolor for="Manager">Manager</label>
+        <input type="radio" name="type" value="M">
+
+    </form>
+
+</body>
+    
 </html>

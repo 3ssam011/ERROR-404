@@ -10,8 +10,8 @@ body{
     width: 300px;
     padding: 30px;
     position: absolute;
-    top: 30%;
-    left: 40%;
+    top: 25%;
+    left: 37%;
     transform:translate(-505,-505) ;
     background:rgba(0, 0, 0, 0.4);
     text-align: center;
@@ -63,3 +63,6 @@ body{
     background-color: yellow;
 }
 
+#fontcolor{
+   color: grey; 
+}
