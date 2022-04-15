@@ -18,8 +18,8 @@ class user
       $ArrayLine = explode('~', $line);
       if($pass==$ArrayLine[2])
       {
-		  echo'yes';
-        return $line;
+		  
+        return 1;
       }
       else{
         echo$line;
