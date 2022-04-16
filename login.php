@@ -32,5 +32,13 @@ if($type=='T')
     $teacher->Password=$password;
     $ct=$teacher->log($filename,$teacher->ID,$teacher->Password);
 }
+if($ct==1)
+{
+    //include_once("");
+}
+else
+{
+    //include_once("");
+}
 
 ?>

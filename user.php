@@ -10,7 +10,6 @@ class user
   private $DOB;
   public function log($filename,$id,$pass)
   {
-	  
     $line=getRowById($filename, '~',$id);
     $line2=searchUser($filename,$pass);
     if($line==$line2)
@@ -22,12 +21,12 @@ class user
         return 1;
       }
       else{
-        echo$line;
-        echo'no';
+        
+        return 0;
       }
     }
     else{
-      echo'no';
+		return 0;
     }
   }
 	/**
