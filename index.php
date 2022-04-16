@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Managment System</title>
-    <link rel="stylesheet" href="loginMain.css" title="style">
+    <link rel="stylesheet" href="login.css" title="style">
 </head>
 <p id="logo"><img src="ER.png"><p>
 <body>
