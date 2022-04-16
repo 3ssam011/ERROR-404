@@ -12,22 +12,26 @@ class user
   {
     $line=getRowById($filename, '~',$id);
     $line2=searchUser($filename,$pass);
-    if($line==$line2)
-    {
-      $ArrayLine = explode('~', $line);
-      if($pass==$ArrayLine[2])
-      {
-		  
-        return 1;
-      }
-      else{
-        
-        return 0;
-      }
-    }
-    else{
-		return 0;
-    }
+	if($line!=null&&$line2!=null)
+	{
+		if($line==$line2)
+		{
+		  $ArrayLine = explode('~', $line);
+		  if($pass==$ArrayLine[2])
+		  {
+			  
+			return 1;
+		  }
+		}
+		else{
+			return 0;
+		}
+	}
+	else
+	{
+		include_once"errorlogin.php";
+	}
+    
   }
 	/**
 	 * 
