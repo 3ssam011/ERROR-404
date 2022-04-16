@@ -11,7 +11,7 @@
     <h1>
         No ID Or Password likethat 
     </h1>
-    <form action="indexMain.php">
+    <form action="index.php">
         <button>
             back to login
         </button>
