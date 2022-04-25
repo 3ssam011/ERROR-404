@@ -7,6 +7,7 @@ $email=$_POST['Email'];
 $phone=$_POST['PhoneNum'];
 $Grade=$_POST['Grade'];
 
+
 $order=new orderDetails();
-$order->orderDetails($Fullnamem,$id,$Grade,$email,$dob,$phone);
+$order->Detail($Fullname,$id,$Grade,$email,$dob,$phone);
 ?>

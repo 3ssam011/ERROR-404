@@ -1,7 +1,7 @@
 <?php
  include_once "order.php";
  include_once "Interfaces.php";
- 
+ include_once "CRUD.php";
 class orderDetails extends order implements OrderDetailsInterFace
 {
     public $date;
@@ -9,7 +9,7 @@ class orderDetails extends order implements OrderDetailsInterFace
     public $phoneNumber;
     public $Grade;
     
-    public function orderDetails($name,$id,$Grade,$email,$date,$phoneNumber)
+    public function Detail($name,$id,$Grade,$email,$date,$phoneNumber)
     {
             $filename="orderDetails.txt";
             $this->Fullname=$name;
