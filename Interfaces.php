@@ -9,9 +9,10 @@ interface HRInterFace{
 }
 
 interface MangerInterFace{
-    public function HireUser();
-    public function FiresUser();
+    public function HireUser($t,$name,$pass,$email,$DOB);
+    public function FiresUser($t,$name,$pass,$email,$DOB,$id);
 }
+
 
 interface SecretaryInterFace{
     public function RegisterInfo();
