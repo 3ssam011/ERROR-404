@@ -59,10 +59,6 @@ body{
     cursor: pointer;
 }
 
-.box input[type="sumbit"]:hover{
-    background-color: yellow;
-}
-
 #fontcolor{
    color: grey; 
 }
