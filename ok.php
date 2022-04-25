@@ -15,4 +15,10 @@ if($check=="F")
     $pt= new manager ();
     $pt->FiresUser($type,$Fullname,$pass,$email,$DOB,$id);
 }
+
+if($check=="U")
+{
+    $pt= new manager ();
+    $pt->UpdateUser($type,$Fullname,$pass,$email,$DOB,$id);
+}
 ?>
