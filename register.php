@@ -10,6 +10,7 @@
 <body>
     <form action="ok.php" method="POST">
     <input type="text" name="FullName" placeholder="Enter FullName"  required>
+    <input type="text" name="ID" placeholder="Enter ID"  required>
     <input type="date" name="Date" placeholder="Enter DOB"required>
     <input type="text" name="Email" placeholder="Enter Email" required>
     <label id= fontcolor for="Teacher"> Teacher</label>

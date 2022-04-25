@@ -1,5 +1,7 @@
 <?php
+include_once"manager.php";
 $Fullname=$_POST['FullName'];
+$id=$_POST['ID'];
 $dob=$_POST['Date'];
 $email=$_POST['Email'];
 $pass="Ihf".$dob;
@@ -12,13 +14,12 @@ if($check=="H")
 }
 if($check=="F")
 {
-    $pt= new manager ();
+    $pt= new manager();
     $pt->FiresUser($type,$Fullname,$pass,$email,$DOB,$id);
 }
-
 if($check=="U")
 {
-    $pt= new manager ();
+    $pt= new manager();
     $pt->UpdateUser($type,$Fullname,$pass,$email,$DOB,$id);
 }
 ?>
