@@ -116,7 +116,5 @@ class manager extends user implements MangerInterFace
             $this->DOB=$DOB;
             UpdateUserdate($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
-
-
 }
 ?>
