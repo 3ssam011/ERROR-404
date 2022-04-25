@@ -11,6 +11,7 @@ class orderDetails extends order implements OrderDetailsInterFace
     
     public function orderDetails($name,$id,$Grade,$email,$date,$phoneNumber)
     {
+        
             $filename="orderDetails.txt";
             $this->Fullname=$name;
             $this->id=$id;
@@ -18,7 +19,7 @@ class orderDetails extends order implements OrderDetailsInterFace
             $this->email=$email;
             $this->date=$date;
             $this->phoneNumber=$phoneNumber;
-            ADD($filename,$this->email,$this->id, $this->Fullname,$this->date);
+            ADD($filename,$this->email,$this->id, $this->Fullname,$this->date);      
             $filename="order.txt";
             ADD($filename,"",$this->id,$this->Fullname,"");
     }
