@@ -7,11 +7,11 @@
     <title>Welcome</title>
 </head>
 <body>
-    <form action="" method="POST">
+    <form action="r2.PHP" method="POST">
     <input type="text" name="FullName" placeholder="Enter FullName"  required>
     <br>
     <br>
-    <input type="text" name="National ID" placeholder="Enter ID"  required>
+    <input type="text" name="NationalID" placeholder="Enter ID"  required>
     <br>
     <br>
     <input type="date" name="Date" placeholder="Enter DOB"required>
