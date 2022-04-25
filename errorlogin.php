@@ -16,6 +16,14 @@
             back to login
         </button>
     </form>
+    <form action="R.php">
+        <label for="New">
+            if you are new please Sign Up
+        </label>
+        <button>
+            Sign Up
+        </button>
+    </form>
     </div>
 </body>
 </html>
