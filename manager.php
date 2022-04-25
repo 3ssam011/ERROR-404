@@ -69,6 +69,10 @@ class manager extends user implements MangerInterFace
             DeleteRecord($filename, $record);
         }
     }
+    public function UpdateUser($t,$name,$pass,$email,$DOB,$id)
+    {
+        
+    }
 
 }
 ?>
