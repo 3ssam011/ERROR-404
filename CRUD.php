@@ -66,7 +66,6 @@ function ADD($fileName,$Email, $Password, $FullName,$DOB)
 function DeleteRecord($fileName, $record)
 {
     $contents = file_get_contents($fileName);
-    //replace recrd with null in content
     $contents = str_replace($record, '', $contents);
     file_put_contents($fileName, $contents);
 }
@@ -93,15 +92,19 @@ function getRowById($fileName, $Separator, $id)
     return false;
 }
 
+function UpdateRecord($fileName, $Newrecord, $OldRecord)
+{
+    $contents = file_get_contents($fileName);
+    $contents = str_replace($OldRecord, $Newrecord, $contents);
+    file_put_contents($fileName, $contents);
+}
+
 function UpdateUser($id, $Email, $Password, $FullName, $DOB)
 {
     global $fileName;
     $record = $id . "~" . $Email . "~" . $Password . "~" . $FullName . "~" . $DOB . "\r\n";
     $r = getRowById($fileName, "~", $id);
-    //echo $record ."NEW <br>";
-    //echo $r ."NEW <br>";
     UpdateRecord($fileName, $record, $r);
-
 }
 
 ?>

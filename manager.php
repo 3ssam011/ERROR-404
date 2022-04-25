@@ -80,9 +80,20 @@ class manager extends user implements MangerInterFace
             DeleteRecord($filename, $record);
         }
     }
+
     public function UpdateUser($t,$name,$pass,$email,$DOB,$id)
     {
-        
+        if($t=="teacher")
+        {
+            $filename="teacher.txt";
+            $this->Fullname=$name;
+            $this->ID=$id;
+            $this->Password=$pass;
+            $this->type=$t;
+            $this->email=$email;
+            $this->DOB=$DOB;
+            UpdateUser($this->ID,$this->email,$this->Password, $this->Fullname, $this->DOB);
+        }
     }
 
 }
