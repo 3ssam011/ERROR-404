@@ -80,20 +80,25 @@ class manager extends user implements MangerInterFace
             DeleteRecord($filename, $record);
         }
     }
+
     public function UpdateUser($t,$name,$pass,$email,$DOB,$id)
     {
+
         if($t=="T")
         {
             $filename="teacher.txt";
             $this->Fullname=$name;
             $this->ID=getLastId($filename, '~')+1;
+
             $this->Password=$pass;
             $this->type=$t;
             $this->email=$email;
             $this->DOB=$DOB;
-            UpdateUser($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
+
+            UpdateUser($this->ID,$this->email,$this->Password, $this->Fullname, $this->DOB);
         }
         
+
         if($t=="S")
         {
             $filename="student.txt";
@@ -105,6 +110,7 @@ class manager extends user implements MangerInterFace
             $this->DOB=$DOB;
             UpdateUser($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
+
         if($t=="HR")
         {
             $filename="HR.txt";
@@ -114,7 +120,8 @@ class manager extends user implements MangerInterFace
             $this->type=$t;
             $this->email=$email;
             $this->DOB=$DOB;
-            UpdateUserdate($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
+            UpdateUser($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
+    }
 }
 ?>
