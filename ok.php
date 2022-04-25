@@ -10,16 +10,16 @@ $check=$_POST['choose'];
 if($check=="H")
 {
     $pt=new manager();
-    $pt->HireUser($type,$Fullname,$pass,$email,$DOB);
+    $pt->HireUser($type,$Fullname,$pass,$email,$dob);
 }
 if($check=="F")
 {
     $pt= new manager();
-    $pt->FiresUser($type,$Fullname,$pass,$email,$DOB,$id);
+    $pt->FiresUser($type,$Fullname,$pass,$email,$dob,$id);
 }
 if($check=="U")
 {
     $pt= new manager();
-    $pt->UpdateUser($type,$Fullname,$pass,$email,$DOB,$id);
+    $pt->UpdateUser($type,$Fullname,$pass,$email,$dob,$id);
 }
 ?>
