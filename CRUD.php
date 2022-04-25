@@ -53,13 +53,13 @@ function ADD($fileName,$Email, $Password, $FullName,$DOB)
     $id = getLastId($fileName, "~") + 1;
     $rec = $id . "~"  . $FullName. '~'. $Password . "~".$Email . "~" .$DOB ;
     if (searchUser($fileName, $FullName) == false)
-     {
+    {
         StoreRecord($fileName, $rec);
         return true;
-     } else 
-     {
+    } else 
+    {
         return false;
-     }
+    }
 
 }
 
@@ -83,11 +83,10 @@ function getRowById($fileName, $Separator, $id)
         $line = fgets($myfile);
         $ArrayLine = explode($Separator, $line);
 
-        if ($ArrayLine[0] == $id) {
-           
+        if ($ArrayLine[0] == $id)
+        {
             return $line;
         }
-
     }
     return false;
 }
