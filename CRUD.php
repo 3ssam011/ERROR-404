@@ -100,9 +100,11 @@ function UpdateRecord($fileName, $Newrecord, $OldRecord)
 
 function UpdateUser($fileName,$id, $Email, $Password, $FullName, $DOB)
 {
-    global $fileName;
-    $record = $id . "~" . $Email . "~" . $Password . "~" . $FullName . "~" . $DOB . "\r\n";
+    $myfile = fopen($fileName, "r+") or die("Unable to open file!");
+    $record = $id . "~" . $FullName . "~" . $Password . "~" . $Email . "~" . $DOB . "\r\n";
+    echo$record;
     $r = getRowById($fileName, "~", $id);
+    echo$r;
     UpdateRecord($fileName, $record, $r);
 }
 

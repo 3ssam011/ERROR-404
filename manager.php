@@ -87,7 +87,7 @@ class manager extends user implements MangerInterFace
         {
             $filename="teacher.txt";
             $this->Fullname=$name;
-            $this->ID=getLastId($filename, '~')+1;
+            $this->ID=$id;
 
             $this->Password=$pass;
             $this->type=$t;
@@ -102,7 +102,7 @@ class manager extends user implements MangerInterFace
         {
             $filename="student.txt";
             $this->Fullname=$name;
-            $this->ID=getLastId($filename, '~')+1;
+            $this->ID=$id;
             $this->Password=$pass;
             $this->type=$t;
             $this->email=$email;
@@ -114,7 +114,7 @@ class manager extends user implements MangerInterFace
         {
             $filename="HR.txt";
             $this->Fullname=$name;
-            $this->ID=getLastId($filename, '~')+1;
+            $this->ID=$id;
             $this->Password=$pass;
             $this->type=$t;
             $this->email=$email;
