@@ -93,7 +93,6 @@ function getRowById($fileName, $Separator, $id)
     return false;
 }
 
-// Update
 function UpdateUser($id, $Email, $Password, $FullName, $DOB)
 {
     global $fileName;
