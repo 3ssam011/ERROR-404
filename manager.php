@@ -32,6 +32,30 @@ class manager extends user implements MangerInterFace
             $record= $this->ID.'~'.$this->Fullname.'~'.$this->Password.'~'. $this->email.'~'. $this->DOB;
             DeleteRecord($filename, $record);
         }
+        if($t=="student")
+        {
+            $filename="student.txt";
+            $this->Fullname=$name;
+            $this->ID=$id;
+            $this->Password=$pass;
+            $this->type=$t;
+            $this->email=$email;
+            $this->DOB=$DOB;
+            $record= $this->ID.'~'.$this->Fullname.'~'.$this->Password.'~'. $this->email.'~'. $this->DOB;
+            DeleteRecord($filename, $record);
+        }
+        if($t=="hr")
+        {
+            $filename="hr.txt";
+            $this->Fullname=$name;
+            $this->ID=$id;
+            $this->Password=$pass;
+            $this->type=$t;
+            $this->email=$email;
+            $this->DOB=$DOB;
+            $record= $this->ID.'~'.$this->Fullname.'~'.$this->Password.'~'. $this->email.'~'. $this->DOB;
+            DeleteRecord($filename, $record);
+        }
     }
 
 }
