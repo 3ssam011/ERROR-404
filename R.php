@@ -9,13 +9,25 @@
 <body>
     <form action="" method="POST">
     <input type="text" name="FullName" placeholder="Enter FullName"  required>
+    <br>
+    <br>
     <input type="text" name="National ID" placeholder="Enter ID"  required>
+    <br>
+    <br>
     <input type="date" name="Date" placeholder="Enter DOB"required>
+    <br>
+    <br>
     <input type="text" name="Email" placeholder="Enter Email" required>
+    <br>
+    <br>
     <input type="text" name="PhoneNum" placeholder="Enter your PhoneNum" required>
+    <br>
+    <br>
     <input type="text" name="Grade" placeholder="Enter Grade" required>
+    <br>
+    <br>
         <button>
-            ok
+            Ok
         </button>
     </form>
 </body>

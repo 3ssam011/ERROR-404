@@ -13,8 +13,7 @@
         <h1> login </h1>
         <input type="text" name="ID" placeholder="Enter ID" id="username" required>
         <input type="password" name="Password" placeholder="Enter password" id="password"required>
-        <input type="Sign In"  vale="login">
-
+        <input type="submit"  value="Sign In">
         <label id= fontcolor for="Teacher"> Teacher</label>
         <input type="radio" name="type" value="T"required >
         <label id= fontcolor for="Student">Student</label>
