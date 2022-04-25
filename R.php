@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <form action="" method="POST">
+    <input type="text" name="FullName" placeholder="Enter FullName"  required>
+    <input type="text" name="National ID" placeholder="Enter ID"  required>
+    <input type="date" name="Date" placeholder="Enter DOB"required>
+    <input type="text" name="Email" placeholder="Enter Email" required>
+    <input type="text" name="PhoneNum" placeholder="Enter your PhoneNum" required>
+    <input type="text" name="Grade" placeholder="Enter Grade" required>
+        <button>
+            ok
+        </button>
+    </form>
+</body>
+</html>
