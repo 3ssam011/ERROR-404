@@ -1,6 +1,7 @@
 <?php
 include_once"user.php";
-class secretary extends user
+include_once"Interfaces.php";
+class secretary extends user implements  SecretaryInterFace
 {
     public function RegisterInfo()
     {

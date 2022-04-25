@@ -1,9 +1,9 @@
 <?php
 include_once"teacher.php";
 include_once"student.php";
- class Quiz
+class Quiz
 {
-    public  $type;
+     public  $type;
      public $grade;
      public $question;
      public $answer;

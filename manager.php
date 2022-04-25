@@ -1,7 +1,8 @@
 <?php
 include_once"user.php";
 include_once"CRUD.php";
-class manager extends user
+include_once"Interfaces.php";
+class manager extends user implements MangerInterFace
 {
     public function HireUser($t,$name,$pass,$email,$DOB)
     {

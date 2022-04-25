@@ -1,6 +1,7 @@
 <?php
 include_once"user.php";
-class teacher extends user
+include_once"Interfaces.php";
+class teacher extends user implements TeacherInterFace
 {
     public function CorrectQuiz()
     {

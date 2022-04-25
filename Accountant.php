@@ -1,10 +1,12 @@
 <?php
 include_once"user.php";
-class Accountant extends user
+include_once"Interfaces.php";
+class Accountant extends user implements AccountantInterFace
 {
     public function DocumentsFees()
     {
 
     }
 }
+
 ?>
