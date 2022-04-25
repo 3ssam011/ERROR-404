@@ -14,8 +14,10 @@
     <input type="text" name="Email" placeholder="Enter Email" required>
     <input type="text" name="PhoneNum" placeholder="Enter your PhoneNum" required>
     <input type="text" name="Grade" placeholder="Enter Grade" required>
+    <br>
+    <br>
         <button>
-            ok
+            Ok
         </button>
     </form>
 </body>
