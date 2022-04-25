@@ -5,7 +5,7 @@ include_once"Student.php";
 $ID=$_POST['ID'];
 $password=$_POST['Password'];
 $type=$_POST['type'];
-$ct=0;
+$ct;
 if($type=='M')
 {
     $filename="manager.txt";
@@ -38,7 +38,7 @@ if($ct==1)
 }
 else
 {
-    //include_once("");
+    include_once"errorlogin.php";
 }
 
 ?>
