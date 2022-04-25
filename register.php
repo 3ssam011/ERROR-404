@@ -20,14 +20,17 @@
         <label id= fontcolor for="HR">HR</label>
         <input type="radio" name="type" value="HR" >
         <br>
+        <br>
         <label id= fontcolor for="Hire"> Hire</label>
         <input type="radio" name="choose" value="H"required >
         <label id= fontcolor for="Fire">Fire</label>
         <input type="radio" name="choose" value="F" >
         <label id= fontcolor for="Update">UpdateUser</label>
         <input type="radio" name="choose" value="U">
+        <br>
+        <br>
         <button>
-            ok
+            Ok
         </button>
     </form>
 </body>
