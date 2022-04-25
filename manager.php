@@ -6,7 +6,7 @@ class manager extends user implements MangerInterFace
 {
     public function HireUser($t,$name,$pass,$email,$DOB)
     {
-        if($t=="teacher")
+        if($t=="T")
         {
             $filename="teacher.txt";
             $this->Fullname=$name;
@@ -18,7 +18,7 @@ class manager extends user implements MangerInterFace
             ADD($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
 
-        if($t=="student")
+        if($t=="S")
         {
             $filename="student.txt";
             $this->Fullname=$name;
@@ -43,7 +43,7 @@ class manager extends user implements MangerInterFace
     }
     public function FiresUser($t,$name,$pass,$email,$DOB,$id)
     {
-        if($t=="teacher")
+        if($t=="T")
         {
             $filename="teacher.txt";
             $this->Fullname=$name;
@@ -55,7 +55,7 @@ class manager extends user implements MangerInterFace
             $record= $this->ID.'~'.$this->Fullname.'~'.$this->Password.'~'. $this->email.'~'. $this->DOB;
             DeleteRecord($filename, $record);
         }
-        if($t=="student")
+        if($t=="S")
         {
             $filename="student.txt";
             $this->Fullname=$name;
@@ -82,7 +82,7 @@ class manager extends user implements MangerInterFace
     }
     public function UpdateUser($t,$name,$pass,$email,$DOB,$id)
     {
-        if($t=="teacher")
+        if($t=="T")
         {
             $filename="teacher.txt";
             $this->Fullname=$name;
@@ -94,7 +94,7 @@ class manager extends user implements MangerInterFace
             UpdateUser($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
         
-        if($t=="student")
+        if($t=="S")
         {
             $filename="student.txt";
             $this->Fullname=$name;
