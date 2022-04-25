@@ -29,6 +29,17 @@ class manager extends user implements MangerInterFace
             $this->DOB=$DOB;
             ADD($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
+        if($t=="HR")
+        {
+            $filename="HR.txt";
+            $this->Fullname=$name;
+            $this->ID=getLastId($filename, '~')+1;
+            $this->Password=$pass;
+            $this->type=$t;
+            $this->email=$email;
+            $this->DOB=$DOB;
+            ADD($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
+        }
     }
     public function FiresUser($t,$name,$pass,$email,$DOB,$id)
     {
