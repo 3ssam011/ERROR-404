@@ -34,7 +34,7 @@ if($type=='T')
 }
 if($ct==1)
 {
-    //include_once("");
+    include_once("register.php");
 }
 else
 {
