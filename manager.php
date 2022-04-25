@@ -67,9 +67,9 @@ class manager extends user implements MangerInterFace
             $record= $this->ID.'~'.$this->Fullname.'~'.$this->Password.'~'. $this->email.'~'. $this->DOB;
             DeleteRecord($filename, $record);
         }
-        if($t=="hr")
+        if($t=="HR")
         {
-            $filename="hr.txt";
+            $filename="HR.txt";
             $this->Fullname=$name;
             $this->ID=$id;
             $this->Password=$pass;

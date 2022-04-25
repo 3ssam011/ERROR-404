@@ -17,6 +17,8 @@
         <input type="radio" name="type" value="T"required >
         <label id= fontcolor for="Student">Student</label>
         <input type="radio" name="type" value="S" >
+        <label id= fontcolor for="HR">HR</label>
+        <input type="radio" name="type" value="HR" >
         <br>
         <label id= fontcolor for="Hire"> Hire</label>
         <input type="radio" name="choose" value="H"required >
