@@ -82,8 +82,41 @@ class manager extends user implements MangerInterFace
     }
     public function UpdateUser($t,$name,$pass,$email,$DOB,$id)
     {
+        if($t=="teacher")
+        {
+            $filename="teacher.txt";
+            $this->Fullname=$name;
+            $this->ID=getLastId($filename, '~')+1;
+            $this->Password=$pass;
+            $this->type=$t;
+            $this->email=$email;
+            $this->DOB=$DOB;
+            UpdateUser($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
+        }
         
-    }
+        if($t=="student")
+        {
+            $filename="student.txt";
+            $this->Fullname=$name;
+            $this->ID=getLastId($filename, '~')+1;
+            $this->Password=$pass;
+            $this->type=$t;
+            $this->email=$email;
+            $this->DOB=$DOB;
+            UpdateUser($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
+        }
+        if($t=="HR")
+        {
+            $filename="HR.txt";
+            $this->Fullname=$name;
+            $this->ID=getLastId($filename, '~')+1;
+            $this->Password=$pass;
+            $this->type=$t;
+            $this->email=$email;
+            $this->DOB=$DOB;
+            UpdateUserdate($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
+        }
+
 
 }
 ?>
