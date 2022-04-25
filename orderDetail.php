@@ -1,6 +1,7 @@
 <?php
  include_once "order.php";
-class orderDetails extends order{
+ include_once "Interfaces.php";
+class orderDetails extends order implements OrderDetailsInterFace{
     public $date;
     public $email;
     public $phoneNumber;

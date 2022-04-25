@@ -33,4 +33,9 @@ interface TeacherInterFace{
     public function Documents();
     public function GiveFeed();
 }
+
+interface OrderDetailsInterFace{
+    public function orderDetails($name,$id,$Grade,$email,$date);
+}
+
 ?>

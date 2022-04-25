@@ -1,5 +1,5 @@
 <?php
-include_once"manager.php";
+include_once "manager.php";
 $Fullname=$_POST['FullName'];
 $id=$_POST['ID'];
 $dob=$_POST['Date'];

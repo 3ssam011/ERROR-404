@@ -1,5 +1,5 @@
 <?php
-include_once"manager.php";
+include_once "manager.php";
 
  class SendRep
  {

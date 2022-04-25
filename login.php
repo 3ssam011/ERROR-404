@@ -1,7 +1,7 @@
 <?php
-include_once"manager.php";
-include_once"teacher.php";
-include_once"Student.php";
+include_once "manager.php";
+include_once "teacher.php";
+include_once "Student.php";
 $ID=$_POST['ID'];
 $password=$_POST['Password'];
 $type=$_POST['type'];

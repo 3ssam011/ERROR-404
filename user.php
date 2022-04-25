@@ -1,5 +1,5 @@
 <?php
-include_once"CRUD.php";
+include_once "CRUD.php";
 class user
 {
   private  $Fullname;
