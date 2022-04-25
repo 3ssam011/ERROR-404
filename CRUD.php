@@ -99,7 +99,7 @@ function UpdateRecord($fileName, $Newrecord, $OldRecord)
     file_put_contents($fileName, $contents);
 }
 
-function UpdateUser($id, $Email, $Password, $FullName, $DOB)
+function UpdateUser($fileName,$id, $Email, $Password, $FullName, $DOB)
 {
     global $fileName;
     $record = $id . "~" . $Email . "~" . $Password . "~" . $FullName . "~" . $DOB . "\r\n";

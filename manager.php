@@ -83,7 +83,6 @@ class manager extends user implements MangerInterFace
 
     public function UpdateUser($t,$name,$pass,$email,$DOB,$id)
     {
-
         if($t=="T")
         {
             $filename="teacher.txt";
@@ -95,7 +94,7 @@ class manager extends user implements MangerInterFace
             $this->email=$email;
             $this->DOB=$DOB;
 
-            UpdateUser($this->ID,$this->email,$this->Password, $this->Fullname, $this->DOB);
+            UpdateUser($filename,$this->ID,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
         
 
@@ -108,7 +107,7 @@ class manager extends user implements MangerInterFace
             $this->type=$t;
             $this->email=$email;
             $this->DOB=$DOB;
-            UpdateUser($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
+            UpdateUser($filename,$this->ID,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
 
         if($t=="HR")
@@ -120,7 +119,7 @@ class manager extends user implements MangerInterFace
             $this->type=$t;
             $this->email=$email;
             $this->DOB=$DOB;
-            UpdateUser($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
+            UpdateUser($filename,$this->ID,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
     }
 }
