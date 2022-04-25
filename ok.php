@@ -10,4 +10,9 @@ if($check=="H")
     $pt=new manager();
     $pt->HireUser($type,$Fullname,$pass,$email,$DOB);
 }
+if($check=="F")
+{
+    $pt= new manager ();
+    $pt->FiresUser($type,$Fullname,$pass,$email,$DOB,$id);
+}
 ?>
