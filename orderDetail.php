@@ -7,13 +7,15 @@ class orderDetails extends order{
     public $Grade;
     public function orderDetails($name,$id,$Grade,$email,$date)
     {
-            $filename="order.txt";
+            $filename="orderDetails.txt";
             $this->Fullname=$name;
             $this->id=$id;
             $this->Grade=$Grade;
             $this->email=$email;
             $this->date=$date;
             ADD($filename,$this->email,$this->id, $this->Fullname,$this->date);
+            $filename="order.txt";
+            ADD($filename,"",$this->id,$this->Fullname,"");
     }
 }
 ?>
