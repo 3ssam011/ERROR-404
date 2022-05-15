@@ -36,6 +36,7 @@ interface TeacherInterFace{
 
 interface OrderDetailsInterFace{
     public function Detail($name,$id,$Grade,$email,$date,$phoneNumber);
+    public function AddDetails();
 }
 
 ?>
