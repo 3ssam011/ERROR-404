@@ -4,40 +4,30 @@ include_once "CRUD.php";
 include_once "Interfaces.php";
 class manager extends user implements MangerInterFace
 {
-    public function HireUser($t,$name,$pass,$email,$DOB)
+    public function HireUser($pt)
     {
-        if($t=="T")
+         $this->Fullname=$pt->Fullname;           
+         $this->Password=$pt->Password;
+         $this->type=$pt->type;
+         $this->email=$pt->email;
+         $this->DOB=$pt->DOB;
+        if($pt->type=="T")
         {
             $filename="teacher.txt";
-            $this->Fullname=$name;
             $this->ID=getLastId($filename, '~')+1;
-            $this->Password=$pass;
-            $this->type=$t;
-            $this->email=$email;
-            $this->DOB=$DOB;
             ADD($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
 
-        if($t=="S")
+        if($pt->type=="S")
         {
             $filename="student.txt";
-            $this->Fullname=$name;
             $this->ID=getLastId($filename, '~')+1;
-            $this->Password=$pass;
-            $this->type=$t;
-            $this->email=$email;
-            $this->DOB=$DOB;
             ADD($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
-        if($t=="HR")
+        if($pt->type=="HR")
         {
             $filename="HR.txt";
-            $this->Fullname=$name;
             $this->ID=getLastId($filename, '~')+1;
-            $this->Password=$pass;
-            $this->type=$t;
-            $this->email=$email;
-            $this->DOB=$DOB;
             ADD($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
     }
