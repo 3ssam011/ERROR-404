@@ -2,24 +2,23 @@
 include_once "CRUD.php";
 class user
 {
-  private  $Fullname;
-  private $ID;
-  private $Password;
-  private $type;
-  private $email;
-  private $DOB;
-  public function log($filename,$id,$pass)
+  public  $Fullname;
+  public $ID;
+  public $Password;
+  public $type;
+  public $email;
+  public $DOB;
+  public function log($filename,$user)
   {
-    $line=getRowById($filename, '~',$id);
-    $line2=searchUser($filename,$pass);
+    $line=getRowById($filename, '~',$user->ID);
+    $line2=searchUser($filename,$user->Password);
 	if($line!=null&&$line2!=null)
 	{
 		if($line==$line2)
 		{
 		  $ArrayLine = explode('~', $line);
-		  if($pass==$ArrayLine[2])
+		  if($user->Password==$ArrayLine[2])
 		  {
-			  
 			return 1;
 		  }
 		}
