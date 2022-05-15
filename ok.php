@@ -20,11 +20,11 @@ if($check=="H")
 }
 if($check=="F")
 {    
-    $pt->FiresUser($type,$Fullname,$pass,$email,$dob,$id);
+    $pt->FiresUser($pt);
 }
 if($check=="U")
 {
     
-    $pt->UpdateUser($type,$Fullname,$pass,$email,$dob,$id);
+    $pt->UpdateUser($pt);
 }
 ?>

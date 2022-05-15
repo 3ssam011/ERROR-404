@@ -31,84 +31,62 @@ class manager extends user implements MangerInterFace
             ADD($filename,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
     }
-    public function FiresUser($t,$name,$pass,$email,$DOB,$id)
+    public function FiresUser($pt)
     {
-        if($t=="T")
+        $this->Fullname=$pt->Fullname;           
+         $this->Password=$pt->Password;
+         $this->type=$pt->type;
+         $this->email=$pt->email;
+         $this->DOB=$pt->DOB;
+         $this->ID=$pt->ID;
+        if($pt->type=="T")
         {
             $filename="teacher.txt";
-            $this->Fullname=$name;
-            $this->ID=$id;
-            $this->Password=$pass;
-            $this->type=$t;
-            $this->email=$email;
-            $this->DOB=$DOB;
+            
             $record= $this->ID.'~'.$this->Fullname.'~'.$this->Password.'~'. $this->email.'~'. $this->DOB;
             DeleteRecord($filename, $record);
         }
-        if($t=="S")
+        if($pt->type=="S")
         {
             $filename="student.txt";
-            $this->Fullname=$name;
-            $this->ID=$id;
-            $this->Password=$pass;
-            $this->type=$t;
-            $this->email=$email;
-            $this->DOB=$DOB;
             $record= $this->ID.'~'.$this->Fullname.'~'.$this->Password.'~'. $this->email.'~'. $this->DOB;
             DeleteRecord($filename, $record);
         }
-        if($t=="HR")
+        if($pt->type=="HR")
         {
             $filename="HR.txt";
-            $this->Fullname=$name;
-            $this->ID=$id;
-            $this->Password=$pass;
-            $this->type=$t;
-            $this->email=$email;
-            $this->DOB=$DOB;
             $record= $this->ID.'~'.$this->Fullname.'~'.$this->Password.'~'. $this->email.'~'. $this->DOB;
             DeleteRecord($filename, $record);
         }
     }
 
-    public function UpdateUser($t,$name,$pass,$email,$DOB,$id)
+    public function UpdateUser($pt)
     {
-        if($t=="T")
+        $this->Fullname=$pt->Fullname;           
+        $this->Password=$pt->Password;
+        $this->type=$pt->type;
+        $this->email=$pt->email;
+        $this->DOB=$pt->DOB;
+        $this->ID=$pt->ID;
+        if($pt->type=="T")
         {
             $filename="teacher.txt";
-            $this->Fullname=$name;
-            $this->ID=$id;
-
-            $this->Password=$pass;
-            $this->type=$t;
-            $this->email=$email;
-            $this->DOB=$DOB;
-
+           
             UpdateUser($filename,$this->ID,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
         
 
-        if($t=="S")
+        if($pt->typet=="S")
         {
             $filename="student.txt";
-            $this->Fullname=$name;
-            $this->ID=$id;
-            $this->Password=$pass;
-            $this->type=$t;
-            $this->email=$email;
-            $this->DOB=$DOB;
+           
             UpdateUser($filename,$this->ID,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
 
-        if($t=="HR")
+        if($pt->type=="HR")
         {
             $filename="HR.txt";
-            $this->Fullname=$name;
-            $this->ID=$id;
-            $this->Password=$pass;
-            $this->type=$t;
-            $this->email=$email;
-            $this->DOB=$DOB;
+           
             UpdateUser($filename,$this->ID,$this->email,$this->Password, $this->Fullname,$this->DOB);
         }
     }
