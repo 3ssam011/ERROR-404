@@ -10,5 +10,13 @@ $BirthCertificatee=$_POST['BC'];
 $Age=$_POST['Age'];
 
 $order=new orderDetails();
-$order->AddDetails($Fullname,$id,$Grade,$email,$dob,$phone);
+$order->fullname=$Fullname;
+$order->id=$id;
+$order->date=$dob;
+$order->email=$email;
+$order->phoneNumber=$phone;
+$order->Grade=$Grade;
+$order->BirthCertificate=$BirthCertificatee;
+$order->age=$Age;
+$order->Detail($order);
 ?>

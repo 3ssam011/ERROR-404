@@ -80,10 +80,10 @@ function ADD($fileName,$Email, $Password, $FullName,$DOB)
     }
 
 }
-function AddDetails($fileName,$Email, $Password, $FullName,$DOB,$BirthCertificate,$Salary,$SalaryOfBus)
+function AddDetails($fileName,$Email, $Password, $FullName,$DOB,$BirthCertificate,$age)
 {
     $id = getLastId($fileName, "~") + 1;
-    $rec = $id . "~"  . $FullName. '~'. $Password . "~".$Email . "~" .$DOB ;
+    $rec = $id . '~'  . $FullName. '~'. $Password . '~'.$Email . '~' .$DOB .'~'.$BirthCertificate.'~'.$age;
     if (searchUser($fileName, $FullName) == false)
     {
         StoreRecord($fileName, $rec);
