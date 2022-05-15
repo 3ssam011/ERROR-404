@@ -6,5 +6,6 @@ class newcomer
     public $nationalID;
     public $age;
     public $address;
+    public $PhoneNum;
 }
 ?>

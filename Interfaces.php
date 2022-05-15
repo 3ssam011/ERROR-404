@@ -10,7 +10,8 @@ interface HRInterFace{
 
 interface MangerInterFace{
     public function HireUser($pt);
-    public function FiresUser($t,$name,$pass,$email,$DOB,$id);
+    public function FiresUser($pt);
+    public function UpdateUser($pt);
 }
 
 
