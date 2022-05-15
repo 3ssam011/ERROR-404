@@ -28,8 +28,6 @@ class orderDetails extends order implements OrderDetailsInterFace
             $this->date=$date;
             $this->phoneNumber=$phoneNumber;
             $this->BirthCertificate=$BirthCertificate;
-            $this->Salary=$Salary;
-            $this->SalaryOfBus=$SalaryOfBus;
             $this->age=$age;
             AddDetails($filename,$this->email,$this->id, $this->Fullname,$this->date,$BirthCertificate,$Salary,$SalaryOfBus,$age);      
             $filename="order.txt";

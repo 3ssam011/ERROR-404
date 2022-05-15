@@ -26,6 +26,14 @@
     <input type="text" name="Grade" placeholder="Enter Grade" required>
     <br>
     <br>
+    Enter your BirthCertificate
+    <br>
+    <input type="file" name="BC" name="img" accept="image/*">
+    <br>
+    <br>
+    <input type="text" name="Age" placeholder="Enter Your Age" required>
+    <br>
+    <br>
         <button>
             Ok
         </button>
