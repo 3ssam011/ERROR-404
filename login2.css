@@ -17,7 +17,25 @@ body{
     text-align: center;
 }
 
+.c{
+    width: 120px;
+    height: 40px;;
+    padding: 30px;
+    position: absolute;
+    top: 72%;
+    left: 43%;
+    transform:translate(-505,-505) ;
+    background:rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
 .box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.c h1{
     color: white;
     text-transform: uppercase;
     font-weight: 700;
@@ -49,6 +67,20 @@ body{
     background: none;
     display: block;
     margin: 20px auto;
+    text-align: center;
+    border: 3px solid yellow;
+    padding: 14px 35px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+}
+
+.c input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
     text-align: center;
     border: 3px solid yellow;
     padding: 14px 35px;

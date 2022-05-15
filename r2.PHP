@@ -9,5 +9,5 @@ $Grade=$_POST['Grade'];
 
 
 $order=new orderDetails();
-$order->Detail($Fullname,$id,$Grade,$email,$dob,$phone);
+$order->AddDetails($Fullname,$id,$Grade,$email,$dob,$phone);
 ?>
