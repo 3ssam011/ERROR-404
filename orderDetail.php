@@ -9,6 +9,7 @@ class orderDetails extends order implements OrderDetailsInterFace
     public $phoneNumber;
     public $Grade;
     
+    
     public function Detail($name,$id,$Grade,$email,$date,$phoneNumber)
     {
         
@@ -19,9 +20,10 @@ class orderDetails extends order implements OrderDetailsInterFace
             $this->email=$email;
             $this->date=$date;
             $this->phoneNumber=$phoneNumber;
+           
             ADD($filename,$this->email,$this->id, $this->Fullname,$this->date);      
             $filename="order.txt";
-            ADD($filename,"",$this->id,$this->Fullname,"");
+            ADD($filename,"",$this->id,$this->Fullname,"","");
     }
 }
 ?>
