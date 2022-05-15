@@ -7,19 +7,24 @@ $email=$_POST['Email'];
 $pass="Ihf".$dob;
 $type=$_POST['type'];
 $check=$_POST['choose'];
+$pt=new manager();
+$pt->Fullname=$Fullname;
+$pt->email=$email;
+$pt->ID=$id;
+$pt->DOB=$dob;
+$pt->Password=$pass;
+$pt->type=$type;
 if($check=="H")
-{
-    $pt=new manager();
-    $pt->HireUser($type,$Fullname,$pass,$email,$dob);
+{    
+    $pt->HireUser($pt);
 }
 if($check=="F")
-{
-    $pt= new manager();
+{    
     $pt->FiresUser($type,$Fullname,$pass,$email,$dob,$id);
 }
 if($check=="U")
 {
-    $pt= new manager();
+    
     $pt->UpdateUser($type,$Fullname,$pass,$email,$dob,$id);
 }
 ?>

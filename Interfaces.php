@@ -9,7 +9,7 @@ interface HRInterFace{
 }
 
 interface MangerInterFace{
-    public function HireUser($t,$name,$pass,$email,$DOB);
+    public function HireUser($pt);
     public function FiresUser($t,$name,$pass,$email,$DOB,$id);
 }
 
@@ -36,6 +36,7 @@ interface TeacherInterFace{
 
 interface OrderDetailsInterFace{
     public function Detail($name,$id,$Grade,$email,$date,$phoneNumber);
+    public function AddDetails();
 }
 
 ?>

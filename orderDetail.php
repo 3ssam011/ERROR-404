@@ -5,11 +5,19 @@
 class orderDetails extends order implements OrderDetailsInterFace
 {
     public $date;
+    
     public $email;
     public $phoneNumber;
     public $Grade;
     
-    public function Detail($name,$id,$Grade,$email,$date,$phoneNumber)
+    public $BirthCertificate;
+    public $Salary;
+    
+    public $SalaryOfBus;
+
+    public $age;
+    
+    public function Detail($name,$id,$Grade,$email,$date,$phoneNumber,$BirthCertificate,$Salary,$SalaryOfBus,$age)
     {
         
             $filename="orderDetails.txt";
@@ -19,9 +27,19 @@ class orderDetails extends order implements OrderDetailsInterFace
             $this->email=$email;
             $this->date=$date;
             $this->phoneNumber=$phoneNumber;
-            ADD($filename,$this->email,$this->id, $this->Fullname,$this->date);      
+            $this->BirthCertificate=$BirthCertificate;
+            $this->Salary=$Salary;
+            $this->SalaryOfBus=$SalaryOfBus;
+            $this->age=$age;
+            AddDetails($filename,$this->email,$this->id, $this->Fullname,$this->date,$BirthCertificate,$Salary,$SalaryOfBus,$age);      
             $filename="order.txt";
-            ADD($filename,"",$this->id,$this->Fullname,"");
+            AddDetails($filename,"",$this->id,$this->Fullname,"","","","","");
     }
+	/**
+	 *
+	 * @return mixed
+	 */
+	function AddDetails() {
+	}
 }
 ?>
