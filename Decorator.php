@@ -1,17 +1,17 @@
 <?php
-public abstract class books
+ abstract class books
 {
-    public string desc="";
-    public string getDescription ();
+    public $desc;
+    public $getDescription;
+    
+    public function  bookId()
     {
-        return desc;
 
 
     }
-    public abstract bookId();
 }
 
-public abstract class boharatdecorator:books
+ abstract class boharatdecorator($books)
 {
     public string getDescription();
 
@@ -28,7 +28,7 @@ public class computers:books
     {
        return 005;
 
-  }
+    }
 
 }
 ?>
