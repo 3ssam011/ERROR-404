@@ -1,5 +1,5 @@
 <?php
-include_once "payMethod.php";
+include_once "payMethodInterface.php";
 
 class PayFawry implements PayMethod
 {
