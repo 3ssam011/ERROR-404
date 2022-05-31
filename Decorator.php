@@ -1,32 +1,65 @@
 <?php
  abstract class books
 {
-    public $desc;
+    public $desc="";
     public $getDescription;
-    
-    public function  bookId()
+    public $bookid;
+    public function  bookId($desc)
     {
+        return desc;
 
 
     }
 }
 
- abstract class boharatdecorator($books)
+
+ abstract class boharatdecorator
 {
-    public string getDescription();
+  
+     public abstract $getDescription;
 
 }
-public class computers:books
+abstract class computers
 {
-    public computers()
+    public function computers($desc)
     {
-        desc="computers";
+        $desc = "computers";
 
 
     }
-    public override double bookId()
+     public function bookId($bookid)
     {
        return 005;
+
+    }
+
+}
+abstract class self_help
+{
+    public function self_help($desc)
+    {
+        $desc = "self_help";
+
+
+    }
+     public function bookId($bookid)
+    {
+       return 158;
+
+    }
+
+}
+abstract class religion
+{
+    public function religion($desc)
+    {
+        $desc = "religion";
+
+
+    }
+     public function bookId($bookid)
+    {
+       return 200;
 
     }
 
