@@ -6,7 +6,7 @@
     public $bookid;
     public function  bookId($desc)
     {
-        return desc;
+        return $desc;
 
 
     }
