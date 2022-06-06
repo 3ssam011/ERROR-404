@@ -1,0 +1,11 @@
+<?php
+include_once "book";
+include_once "computersbook";
+include_once "self_helpbook";
+include_once "religionbook";
+class idbook
+{
+    
+}
+
+?>

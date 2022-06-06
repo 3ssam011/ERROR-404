@@ -1,0 +1,10 @@
+<?php
+abstract class uploadassig 
+{
+
+   public $assig;
+
+}
+
+
+?>
