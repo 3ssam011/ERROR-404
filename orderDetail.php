@@ -31,7 +31,7 @@ class orderDetails extends order implements OrderDetailsInterFace
             addDDDD($filename,$this->email,$this->id, $this->Fullname,$this->date,$this->BirthCertificate,$this->age,$this->courses);                 
             $filename="order.txt";
             $this->IDOrder=getLastId($filename, '~')+1;
-            addDDDD($filename,$this->id,$this->Fullname,"","","","","",$this->courses,$this->IDOrder);
+            AddOrder($filename,$this->id,$this->Fullname,$this->courses,$this->IDOrder);
         
     }
 	/**
