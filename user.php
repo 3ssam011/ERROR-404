@@ -3,7 +3,7 @@ include_once "CRUD.php";
 class user
 {
   public  $Fullname;
-  public $ID;
+  public $ID=0;  
   public $Password;
   public $type;
   public $email;
@@ -20,6 +20,8 @@ class user
 		  $ArrayLine = explode('~', $line);
 		  if($u==$ArrayLine[2])
 		  {
+			session_start();
+			$_SESSION['IDM'] = $user->ID;
 			return 1;
 		  }
 		}

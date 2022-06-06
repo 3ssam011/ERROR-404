@@ -8,14 +8,25 @@
 </head>
 <body>
    
-    <form action=""  method="POST" id="form">        
-        <input type="text" name="IDS" placeholder="Enter Student ID" id="IDS" required>
-        <input type="text" name="SmesterID" placeholder="Enter Smester ID" id="SmesterID"required>
-        
+    <form action="register.php"  method="POST" id="form">        
+        <input type="text" name="IDS" placeholder="Enter Student ID" id="IDS" required>        
+        <br>              
+            <input type="checkbox" id="math" name="math" value="math">
+            <label for="math"> math</label><br>
+            <input type="checkbox" id="physics" name="physics" value="physics">
+            <label for="physics"> physics</label><br>
+            <input type="checkbox" id="chemistry" name="chemistry" value="chemistry">
+            <label for="chemistry">chemistry</label><br>
+            <input type="checkbox" id="english" name="english" value="english">
+            <label for="english"> english</label><br>
+            <input type="checkbox" id="arabic" name="arabic" value="arabic">
+            <label for="arabic"> arabic</label><br>
+            <input type="checkbox" id="history" name="history" value="history">
+            <label for="history"> history</label><br>
+            <input type="checkbox" id="socialStudies" name="socialStudies" value="socialStudies">
+            <label for="socialStudies"> socialStudies</label><br><br>           
         <button> Supmit</button>
     </form>    
-    <br>
-    <button onclick="readcourse()"> select courses</button>
-    <script src="register.js"></script>
+    <br>   
 </body>
 </html>
