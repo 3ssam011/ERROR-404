@@ -19,5 +19,9 @@ class student extends user implements StudentInterFace
     }
     
     
+	/**
+	 */
+	function __construct() {
+	}
 }
 ?>
