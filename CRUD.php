@@ -66,6 +66,14 @@ function getLastId($fileName, $Separator)
     }
     return $LastId;
 }
+function ADDReg($fileName,$idstudent, $idmanger, $date,$time)  
+{
+    $id = getLastId($fileName, "~") + 1;
+    $rec = $id . "~"  . $idstudent. '~'. $idmanger . "~".$date . "~" .$time ;
+    StoreRecord($fileName, $rec);
+        return true;
+        
+}
 
 function ADD($fileName,$Email, $Password, $FullName,$DOB)
 {

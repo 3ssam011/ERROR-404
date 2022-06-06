@@ -1,8 +1,8 @@
 <?php
 include_once "teacher.php";
-class t
+class feedBack
 {
-   public $t;
+   public $feedBack;
 }
 
 ?>
