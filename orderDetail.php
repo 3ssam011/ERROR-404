@@ -15,10 +15,8 @@ class orderDetails extends order implements OrderDetailsInterFace
     
     public function Detail($order)
     {
-        
-            $file=new file;
-            $file->filename="student.txt";
-            $this->filename="orderDetails.txt";
+
+            $filename="orderDetails.txt";
             $this->Fullname=$order->fullname;
             $this->id=$order->id;
             $this->Grade=$order->Grade;
@@ -28,8 +26,7 @@ class orderDetails extends order implements OrderDetailsInterFace
             $this->BirthCertificate=$order->BirthCertificate;
             $this->age=$order->age;
             $this->courses=$order->courses;
-            AddDetails($this->filename,$this->email,$this->id, $this->Fullname,$this->date,$this->BirthCertificate,$this->age,$this->courses);  
-            $file->drawtable();
+            AddDetails($this->filename,$this->email,$this->id, $this->Fullname,$this->date,$this->BirthCertificate,$this->age,$this->courses);                 
             $filename="order.txt";
             AddDetails($filename,"",$this->id,$this->Fullname,"","","","","",$this->courses);
     }
@@ -40,4 +37,5 @@ class orderDetails extends order implements OrderDetailsInterFace
 	function AddDetails() {
 	}
 }
+
 ?>
