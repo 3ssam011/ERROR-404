@@ -23,8 +23,7 @@ $ct;
         $student->Password=$password;
         $ct=$student->log($filename,$student);
         if($ct==1)
-        {
-            echo"hi student";
+        {            
         include_once("SCrud.php");
         }
         else
