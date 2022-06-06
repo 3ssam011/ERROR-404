@@ -26,9 +26,9 @@ class orderDetails extends order implements OrderDetailsInterFace
             $this->BirthCertificate=$order->BirthCertificate;
             $this->age=$order->age;
             $this->courses=$order->courses;
-            AddDetails($this->filename,$this->email,$this->id, $this->Fullname,$this->date,$this->BirthCertificate,$this->age,$this->courses);                 
+            addDDDD($this->filename,$this->email,$this->id, $this->Fullname,$this->date,$this->BirthCertificate,$this->age,$this->courses);                 
             $filename="order.txt";
-            AddDetails($filename,"",$this->id,$this->Fullname,"","","","","",$this->courses);
+            addDDDD($filename,"",$this->id,$this->Fullname,"","","","","",$this->courses);
     }
 	/**
 	 *
