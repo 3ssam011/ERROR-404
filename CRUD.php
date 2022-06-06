@@ -71,6 +71,7 @@ function ADDReg($fileName,$idstudent, $idmanger, $date,$time)
     $rec = $id . "~"  . $idstudent. '~'. $idmanger . "~".$date . "~" .$time ;
     StoreRecord($fileName, $rec);
         return true;
+        
 }
 
 function ADD($fileName,$Email, $Password, $FullName,$DOB)
