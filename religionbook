@@ -1,0 +1,17 @@
+<?php
+abstract class religion extends book
+{
+    public function religion($desc)
+    {
+        $desc = "religion";
+
+
+    }
+     public function bookId($bookid)
+    {
+       return 200;
+
+    }
+
+}
+?>

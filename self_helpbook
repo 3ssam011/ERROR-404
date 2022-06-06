@@ -1,0 +1,17 @@
+<?php
+abstract class self_help extends book
+{
+    public function self_help($desc)
+    {
+        $desc = "self_help";
+
+
+    }
+     public function bookId($bookid)
+    {
+       return 158;
+
+    }
+
+}
+?>

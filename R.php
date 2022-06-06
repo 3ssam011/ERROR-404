@@ -34,6 +34,9 @@
     <input type="text" name="Age" placeholder="Enter Your Age" required>
     <br>
     <br>
+    <input type="text" name="Course" placeholder="Enter Your course" required>
+    <br>
+    <br>
         <button>
             Ok
         </button>
