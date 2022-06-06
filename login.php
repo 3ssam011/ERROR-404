@@ -25,7 +25,7 @@ $ct;
         if($ct==1)
         {
             echo"hi student";
-       // include_once("register.php");
+        include_once("SCrud.php");
         }
         else
         {
