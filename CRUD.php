@@ -43,6 +43,7 @@ function searchUser($fileName, $Search)
 
 }
 
+
 function getLastId($fileName, $Separator)
 {
 
@@ -71,6 +72,7 @@ function ADDReg($fileName,$idstudent, $idmanger, $date,$time)
     $rec = $id . "~"  . $idstudent. '~'. $idmanger . "~".$date . "~" .$time ;
     StoreRecord($fileName, $rec);
         return true;
+        
 }
 
 
@@ -116,6 +118,14 @@ function addDDDD($fileName,$Email, $Password, $FullName,$DOB,$BirthCertificate,$
     }
 
 }
+
+function ad($fileName,$name,$Klam)
+{
+    $id = getLastId($fileName, "~") + 1;
+    $rec = $id . '~' . $name. '~' .$Klam;
+    StoreRecord($fileName, $rec);
+}
+
 function DeleteRecord($fileName, $record)
 {
     $contents = file_get_contents($fileName);

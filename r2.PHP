@@ -22,4 +22,5 @@ $order->age=$Age;
 $order->courses=$courses;
 $order->Detail($order);
 echo "done";
+
 ?>
