@@ -2,6 +2,7 @@
  include_once "order.php";
  include_once "Interfaces.php";
  include_once "CRUD.php";
+ include_once "fileTable.php";
 class orderDetails extends order implements OrderDetailsInterFace
 {
     public $date;
@@ -10,11 +11,14 @@ class orderDetails extends order implements OrderDetailsInterFace
     public $Grade;    
     public $BirthCertificate;
     public $age;
+    public $courses;
     
     public function Detail($order)
     {
         
-            $filename="orderDetails.txt";
+            $file=new file;
+            $file->filename="student.txt";
+            $this->filename="orderDetails.txt";
             $this->Fullname=$order->fullname;
             $this->id=$order->id;
             $this->Grade=$order->Grade;
@@ -23,9 +27,11 @@ class orderDetails extends order implements OrderDetailsInterFace
             $this->phoneNumber=$order->phoneNumber;
             $this->BirthCertificate=$order->BirthCertificate;
             $this->age=$order->age;
-            AddDetails($filename,$this->email,$this->id, $this->Fullname,$this->date,$this->BirthCertificate,$this->age);  
+            $this->courses=$order->courses;
+            AddDetails($this->filename,$this->email,$this->id, $this->Fullname,$this->date,$this->BirthCertificate,$this->age,$this->courses);  
+            $file->drawtable();
             $filename="order.txt";
-            AddDetails($filename,"",$this->id,$this->Fullname,"","","","","");
+            AddDetails($filename,"",$this->id,$this->Fullname,"","","","","",$this->courses);
     }
 	/**
 	 *
