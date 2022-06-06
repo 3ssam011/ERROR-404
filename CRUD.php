@@ -80,7 +80,7 @@ function ADD($fileName,$Email, $Password, $FullName,$DOB)
     }
 
 }
-function AddDetails($fileName,$Email, $Password, $FullName,$DOB,$BirthCertificate,$age)
+function addDDDD($fileName,$Email, $Password, $FullName,$DOB,$BirthCertificate,$age)
 {
     $id = getLastId($fileName, "~") + 1;
     $rec = $id . '~'  . $FullName. '~'. $Password . '~'.$Email . '~' .$DOB .'~'.$BirthCertificate.'~'.$age;
