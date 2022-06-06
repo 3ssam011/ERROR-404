@@ -23,8 +23,8 @@ interface SecretaryInterFace{
 }
 
 interface StudentInterFace{
-    public function SeeGrades();
-    public function SolveQuiz();
+    public function SeeGrades($subject,$id);
+    public function SolveQuiz($subject,$id);
 }
 
 interface TeacherInterFace{
