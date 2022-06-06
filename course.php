@@ -39,19 +39,5 @@ class Cources implements SubjectInterface{
     }
      
 }
-$sub=1;
-$id=1;
-$y=new student();
-$y->SeeGrades($sub,$id);
-echo "<br>";
-$x=new teacher();
-$x->CorrectQuiz();
-echo "<br>";
-$x->TakeStudentAttend();
-echo "<br>";
-$x->GiveFeed();
-echo "<br>";
-$x->Evaluate();
-echo "<br>";
-$x->Documents();
+
 ?>
