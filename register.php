@@ -51,9 +51,26 @@ $x->idstudent=$IDS;
 $x->idmanger=$IDM;
 $x->date=date("Y/m/d");
 $x->time=date("l");
-$ArrayLine = explode('~', $line);
+
+$xx=strlen($line);
+if($line[$xx-1]=='~')
+{
+    $line1="";
+   for($i=0;$i<$xx-1;$i++)
+   {
+    $line1.=$line[$i];
+   }
+   //echo $line1;
+   $ArrayLine = explode('~', $line1);
+}
+else
+{
+    $ArrayLine = explode('~', $line);
+    
+}
 $x->RegisterInfo($x,$ArrayLine);
 
 
-//echo "done";
+
+echo "done";
 ?>

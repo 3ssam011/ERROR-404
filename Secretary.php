@@ -33,8 +33,7 @@ class secretary  implements  SecretaryInterFace
     {
         foreach ($array as $val)
         {
-            $line=searchUser("courses.txt",$val);
-            echo$line;
+            $line=searchUser("courses.txt",$val);        
             $arrayline=explode("~",$line);            
             ADDReg("registerdetials.txt",$id,$arrayline[0],$arrayline[1],$arrayline[2]);
         }
