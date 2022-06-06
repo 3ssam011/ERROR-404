@@ -13,7 +13,7 @@ $ct;
     $ct=$manager->log($filename,$manager);
     if($ct==1)
     {
-    include_once("MCrud.php");
+    include_once("MCrud2.html");
     }
     else
     {
