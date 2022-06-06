@@ -16,5 +16,10 @@ while(!feof($myfile))
         $name=$ArrayLine[1];
         ad($filename,$name,$Klam);
     }
+    else
+    {
+        echo"No ID like that";
+        break;
+    }
 }    
 ?>
