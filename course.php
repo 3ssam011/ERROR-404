@@ -3,6 +3,8 @@ include_once "Subject.php";
 class Cources implements SubjectInterface{
     public $name;
     private $Availablity;
+    public $idSemester;
+
     private $observerList=array();
 
     public function __construct($name){
@@ -28,10 +30,11 @@ class Cources implements SubjectInterface{
 
     public function NotifyAll(){
         foreach($this->observer as $obs){
+        
            $obs->update($this->Availablity);                      
         }
     }
-
+     
 }
 
 ?>
