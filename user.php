@@ -10,14 +10,15 @@ class user
   public $DOB;
   public function log($filename,$user)
   {
+	$u=Encrypt($user->Password,1);	
     $line=getRowById($filename, '~',$user->ID);
-    $line2=searchUser($filename,$user->Password);
+    $line2=searchUser($filename,$u);
 	if($line!=null&&$line2!=null)
 	{
 		if($line==$line2)
 		{
 		  $ArrayLine = explode('~', $line);
-		  if($user->Password==$ArrayLine[2])
+		  if($u==$ArrayLine[2])
 		  {
 			return 1;
 		  }

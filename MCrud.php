@@ -33,6 +33,9 @@
             Ok
         </button>
     </form>
+    <form action="listall.php">
+        <button>See all student</button>
+    </form>
 </body>
 </html>
 
