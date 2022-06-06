@@ -1,0 +1,17 @@
+<?php
+abstract class computers extends book
+{
+    public function computers($desc)
+    {
+        $desc = "computers";
+
+
+    }
+     public function bookId($bookid)
+    {
+       return 005;
+
+    }
+
+}
+?>

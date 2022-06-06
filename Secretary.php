@@ -5,8 +5,7 @@ class secretary extends user implements  SecretaryInterFace
 {
     public function RegisterInfo()
     {
-
-
+        
     }
     public function AddUser()
     {
