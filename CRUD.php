@@ -73,6 +73,7 @@ function ADDReg($fileName,$idstudent, $idmanger, $date,$time)
         return true;
 }
 
+
 function ADD($fileName,$Email, $Password, $FullName,$DOB)
 {
     $id = getLastId($fileName, "~") + 1;

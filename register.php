@@ -51,7 +51,9 @@ $x->idstudent=$IDS;
 $x->idmanger=$IDM;
 $x->date=date("Y/m/d");
 $x->time=date("l");
-$x->RegisterInfo($x);
+$ArrayLine = explode('~', $line);
+$x->RegisterInfo($x,$ArrayLine);
 
-echo "done";
+
+//echo "done";
 ?>

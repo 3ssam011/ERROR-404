@@ -5,6 +5,8 @@ include_once "fileTable.php";
 class Cources implements SubjectInterface{
     public $name;
     private $Availablity;
+    public $courseWork;
+    public $finalgrade;
     public $idSemester;
 
     private $observerList=array();

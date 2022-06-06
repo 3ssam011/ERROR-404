@@ -1,7 +1,7 @@
-1~math
-2~physics
-3~chemistry
-4~english
-5~arabic
-6~history
-7~socialStudies
+1~math~40~100 
+2~physics~40~100 
+3~chemistry~40~100 
+4~english~40~100 
+5~arabic~40~100 
+6~history~40~100 
+7~socialStudies~40~100 

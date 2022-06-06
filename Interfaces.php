@@ -16,8 +16,8 @@ interface MangerInterFace{
 
 
 interface SecretaryInterFace{
-    public function RegisterInfo($x);
-    public function AddRegisterDeitals();
+    public function RegisterInfo($x,$ArrayLine);
+    public function AddRegisterDeitals($array,$id);
     public function CreateEmail();
     public function ScheduleMaint();
 }
