@@ -1,11 +1,12 @@
 
+<!--edit -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Welcome Manager</title>
 </head>
 <body>
     <form action="ok.php" method="POST">
@@ -29,12 +30,9 @@
         <input type="radio" name="choose" value="U">
         <br>
         <br>
-        <button>
+        <button >
             Ok
         </button>
-    </form>
-    <form action="listall.php">
-        <button>See all student</button>
     </form>
 </body>
 </html>

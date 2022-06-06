@@ -1,0 +1,37 @@
+body{
+    background-color: aqua;
+}
+#b{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#d{
+    margin-left: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#a{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#c{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#jsb{
+    padding: 1%;
+    margin-top: 5%;
+    margin-left:5% ;
+}
+#text{
+    margin-top: 2%;
+    margin-left:5% 
+}
+
+#id{
+    margin-top: 2%;
+    margin-left:7%; 
+}
