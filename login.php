@@ -24,7 +24,7 @@ $ct;
         $ct=$student->log($filename,$student);
         if($ct==1)
         {            
-        include_once("SCrud.php");
+        include_once("SCrud.html");
         }
         else
         {
