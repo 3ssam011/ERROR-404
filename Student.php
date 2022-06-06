@@ -5,6 +5,7 @@ class student extends user implements StudentInterFace
 {
     public $courses;
     public $subject;
+   
     public function SeeGrades($subject,$id)
     {
         

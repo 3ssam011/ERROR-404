@@ -8,6 +8,7 @@ $phone=$_POST['PhoneNum'];
 $Grade=$_POST['Grade'];
 $BirthCertificatee=$_POST['BC'];
 $Age=$_POST['Age'];
+$courses="english";
 
 $order=new orderDetails();
 $order->fullname=$Fullname;
@@ -18,5 +19,7 @@ $order->phoneNumber=$phone;
 $order->Grade=$Grade;
 $order->BirthCertificate=$BirthCertificatee;
 $order->age=$Age;
+$order->courses=$courses;
 $order->Detail($order);
+
 ?>
