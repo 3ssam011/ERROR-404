@@ -22,7 +22,7 @@ $order->age=$Age;
 $order->courses=$courses;
 $order->Detail($order);
 $x=new file();
- $x->filename="orderDetails.txt";
+ $x->filename="order.txt";
  echo '<table border=1>';
  $x->drawtable();
 ?>

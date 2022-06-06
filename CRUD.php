@@ -80,10 +80,24 @@ function ADD($fileName,$Email, $Password, $FullName,$DOB)
     }
 
 }
-function addDDDD($fileName,$Email, $Password, $FullName,$DOB,$BirthCertificate,$age)
+function AddOrder($fileName,$id, $FullName, $course,$IdOrder)
 {
     $id = getLastId($fileName, "~") + 1;
-    $rec = $id . '~'  . $FullName. '~'. $Password . '~'.$Email . '~' .$DOB .'~'.$BirthCertificate.'~'.$age;
+    $rec =  $id. '~'. $FullName . "~".$course . "~" .$IdOrder ;
+    if (searchUser($fileName, $FullName) == false)
+    {
+        StoreRecord($fileName, $rec);
+        return true;
+    } else 
+    {
+        return false;
+    }
+
+}
+function addDDDD($fileName,$Email, $Password, $FullName,$DOB,$BirthCertificate,$age,$courses)
+{
+    $id = getLastId($fileName, "~") + 1;
+    $rec = $id . '~'  . $FullName. '~'. $Password . '~'.$Email . '~' .$DOB .'~'.$BirthCertificate.'~'.$age.'~'.$courses;
     if (searchUser($fileName, $FullName) == false)
     {
         StoreRecord($fileName, $rec);
