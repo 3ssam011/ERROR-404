@@ -26,6 +26,7 @@ class secretary  implements  SecretaryInterFace
      $this->date=$x->date;
      $this->time=$x->time;
      ADDReg("register.txt",$this->idstudent,$this->idmanger,$this->date,$this->time);
+          
     $this->AddRegisterDeitals($ArrayLine,$id);
     }
     public function AddRegisterDeitals($array,$id)
