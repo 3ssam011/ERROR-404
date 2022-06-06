@@ -8,7 +8,7 @@ $phone=$_POST['PhoneNum'];
 $Grade=$_POST['Grade'];
 $BirthCertificatee=$_POST['BC'];
 $Age=$_POST['Age'];
-$courses="english";
+$courses=$_POST['Course'];
 
 $order=new orderDetails();
 $order->fullname=$Fullname;
@@ -21,5 +21,8 @@ $order->BirthCertificate=$BirthCertificatee;
 $order->age=$Age;
 $order->courses=$courses;
 $order->Detail($order);
-
+$x=new file();
+ $x->filename="orderDetails.txt";
+ echo '<table border=1>';
+ $x->drawtable();
 ?>
