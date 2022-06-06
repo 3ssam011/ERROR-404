@@ -1,6 +1,7 @@
 <?php
 include_once "Subject.php";
 include_once "teacher.php";
+include_once "student.php";
 include_once "fileTable.php";
 class Cources implements SubjectInterface{
     public $name;
@@ -38,8 +39,12 @@ class Cources implements SubjectInterface{
     }
      
 }
+$sub=1;
+$id=1;
+$y=new student();
+$y->SeeGrades($sub,$id);
+echo "<br>";
 $x=new teacher();
-
 $x->CorrectQuiz();
 echo "<br>";
 $x->TakeStudentAttend();
