@@ -5,7 +5,7 @@ class PayCash implements PayMethod
 {
     public function IPay()
     {
-        echo 'pay by Fawry';
+        echo 'pay by Cash';
     }
 }
 ?>
