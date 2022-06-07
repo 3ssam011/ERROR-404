@@ -25,11 +25,14 @@ class file{
         $myfile=fopen($this->filename,"r") or die("sorry cannot be opened");
         while(!feof($myfile))
         {
-            $line=fgets($myfile);
+            $line=fgets($myfile);            
             $array=explode("~",$line);
             for($i=0;$i<count($array);$i++)
-            {               
-                echo $array[7];
+            {            
+                if($i+1==count($array))   
+                {
+                    echo $array[$i];
+                }                
             }
             echo"<br>";
 
