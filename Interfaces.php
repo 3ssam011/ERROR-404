@@ -5,7 +5,9 @@ interface AccountantInterFace{
 
 interface HRInterFace{
     public function MakeReport();
-    public function  HireUser();
+    public function HireUser($pt);
+    public function FiresUser($pt);
+    public function UpdateUser($pt);
 }
 
 interface MangerInterFace{
@@ -18,8 +20,8 @@ interface MangerInterFace{
 interface SecretaryInterFace{
     public function RegisterInfo($x,$ArrayLine);
     public function AddRegisterDeitals($array,$id);
-    public function CreateEmail();
-    public function ScheduleMaint();
+    
+    
 }
 
 interface StudentInterFace{

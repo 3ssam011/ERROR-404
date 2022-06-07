@@ -37,16 +37,6 @@ class secretary  implements  SecretaryInterFace
             $arrayline=explode("~",$line);            
             ADDReg("registerdetials.txt",$id,$arrayline[0],$arrayline[1],$arrayline[2]);
         }
-    }
-    public function CreateEmail()
-    {
-
-    }
-    public function ScheduleMaint()
-    {
-
-    }
-    
-
+    }        
 }
 ?>
