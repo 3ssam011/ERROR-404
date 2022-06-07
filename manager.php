@@ -42,21 +42,29 @@ class manager extends user implements MangerInterFace
         if($pt->type=="T")
         {
             $filename="teacher.txt";
-            
-            $record= $this->ID.'~'.$this->Fullname.'~'.$this->Password.'~'. $this->email.'~'. $this->DOB;
+           
+           $line= getRowById($filename, '~', $$this->ID);
+           $arrayline=explode('~',$line);
+            $record= $this->ID.'~'.$this->Fullname.'~'.$arrayline[2].'~'. $arrayline[3].'~'. $arrayline[4];
             DeleteRecord($filename, $record);
         }
         if($pt->type=="S")
         {
             $filename="student.txt";
-            $record= $this->ID.'~'.$this->Fullname.'~'.$this->Password.'~'. $this->email.'~'. $this->DOB;
+            
+           $line= getRowById($filename, '~', $this->ID);
+           $arrayline=explode('~',$line);
+            $record= $this->ID.'~'.$this->Fullname.'~'.$arrayline[2].'~'. $arrayline[3].'~'. $arrayline[4];
             DeleteRecord($filename, $record);
         }
         if($pt->type=="HR")
         {
             $filename="HR.txt";
-            $record= $this->ID.'~'.$this->Fullname.'~'.$this->Password.'~'. $this->email.'~'. $this->DOB;
-            DeleteRecord($filename, $record);
+           
+            $line= getRowById($filename, '~', $$this->ID);
+            $arrayline=explode('~',$line);
+             $record= $this->ID.'~'.$this->Fullname.'~'.$arrayline[2].'~'. $arrayline[3].'~'. $arrayline[4];
+             DeleteRecord($filename, $record);
         }
     }
 
