@@ -2,6 +2,7 @@
 include_once "user.php";
 include_once "Interfaces.php";
 include_once "CRUD.php";
+include_once "fileTable.php";
 class student extends user implements StudentInterFace
 {
     public $courses;
@@ -18,6 +19,15 @@ class student extends user implements StudentInterFace
     {
         echo "good";
     }
+    public function SeeNotification($id)
+    {
+        $x=new file();
+        $x->filename="Notification.txt";
+        echo '<table border=1>';
+        $x->showSN($id,$x);
+        
+    }
+    
     public function Uploadassignment($x,$ids)
     {
         $fileName="uploadassig.txt";
@@ -40,8 +50,6 @@ class student extends user implements StudentInterFace
     }
     
 	/**
-	 */
-	function __construct() {
-	}
+	 */	
 }
 ?>

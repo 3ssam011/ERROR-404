@@ -19,6 +19,41 @@ class file{
         fclose($myfile);
         
     }
+    public function showSN($id,$x)
+    {
+        $this->filename=$x->filename;        
+        $myfile=fopen($this->filename,"r") or die("sorry cannot be opened");
+        while(!feof($myfile))
+        {
+            $line=fgets($myfile);
+            $array=explode("~",$line);            
+            $line2=searchUser("student.txt",$array[1]);            
+            $array2=explode("~",$line2);
+            if($id==$array2[0])
+            {
+                for ($i=0;$i<count($array2);$i++)
+                {
+                    if($i+1==count($array2))
+                    {                                       
+                         echo "<tr>";           
+                        for($ii=0;$ii<count($array);$ii++)
+                        {
+                            echo "<td>".$array[$ii]."</td>";
+                        }
+                        echo"</tr>";
+                 
+                    }
+                }                
+            }
+            else
+            {
+                break;
+            }
+            
+                     
+        }
+        fclose($myfile);
+    }
 
     public function DrawScedule($x,$xx)
     {
