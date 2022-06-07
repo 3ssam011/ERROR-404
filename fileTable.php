@@ -27,8 +27,13 @@ class file{
         {
             $line=fgets($myfile);
             $array=explode("~",$line);
-            $course=$array[7];
-            echo $course;
+            for($i=0;$i<count($array);$i++)
+            {               
+                echo $array[7];
+            }
+            echo"<br>";
+
+            
         }
         fclose($myfile);
         
