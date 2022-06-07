@@ -1,9 +1,10 @@
-<?php
-	$user=$_POST['username'];
-	$image=$_FILES['myfile'];
-	echo "Hello $user <br/>";
-	echo "File Name<b>::</b> ".$image['name'];
-
-	move_uploaded_file($image['tmp_name'],"photos/".$image['name']);
-	
-	?>
+<?php 
+    if( isset($_POST['submit']) )
+    {
+        $name = "\r\n".$_POST['name'];
+        $file = fopen("uploadassig.txt",'+r');
+        fwrite($file,$name);
+        fclose($file);
+        echo "the has been uploaded";
+    }
+?>
