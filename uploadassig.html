@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<form action="/uploadassig">
-    <input type="file" id="myFile" name="filename">
-    
-    
-  </form>
-  <form action="sumbitassig">
-    <input type="submit" >
-  </form>
+<html>
+<head>
+	<title>ImageUpload</title>
+</head>
+<body>
+	<form action="uploadassig.php" method="post" enctype="multipart/form-data">
+		<label>Username</label>
+		<input type="text" name="username">
+		<br>
+		
+		<input type="file" name='myfile'>
+		<br/>
+		<input type="submit" value="upload">
+	</form>
+</body>
+</html>
+  
  
+  
