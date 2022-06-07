@@ -18,6 +18,22 @@ class file{
         fclose($myfile);
         
     }
+
+    public function DrawScedule($x)
+    {
+        $this->filename=$x->filename;
+        $myfile=fopen($this->filename,"r") or die("sorry cannot be opened");
+        while(!feof($myfile))
+        {
+            $line=fgets($myfile);
+            $array=explode("~",$line);
+            $course=$array[7];
+            echo $course;
+        }
+        fclose($myfile);
+        
+    }
+
 	/**
 	 */
 	function __construct() {
