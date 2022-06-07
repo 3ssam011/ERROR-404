@@ -1,7 +1,6 @@
 <?php
-include_once"CRUD.php";
-include_once"Student2.php";
-include_once"course.php";
+include_once "CRUD.php";
+include_once "course.php";
 $ID=$_POST['id'];
 $filename="Notification.txt";            
 $Klam="your payment has been accepted";
