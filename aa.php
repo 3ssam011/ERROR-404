@@ -1,6 +1,7 @@
 <?php
 include_once"CRUD.php";
 $ID=$_POST['id'];
+$tmm=0;
 $filename="Notification.txt";            
 $Klam="your payment has been accepted";
 $myfile = fopen("student.txt", "r+") or die("Unable to open file!");
@@ -13,11 +14,12 @@ while(!feof($myfile))
     {
         $name=$ArrayLine[1];
         ad($filename,$name,$Klam);
+        $tmm=1;
     }
-    else
-    {
-        echo"No ID like that";
-        break;
-    }
-}    
+}
+
+if($tmm==0)
+{
+    echo"No ID like that";
+}
 ?>
