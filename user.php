@@ -12,6 +12,8 @@ class user
   {	 
 	$u=Encrypt($user->Password,1);	
     $line=getRowById($filename, '~',$user->ID);
+	//11 stud
+	//Ihf2022-06-01
     $line2=searchUser($filename,$u);
 	if($line!=null&&$line2!=null)
 	{
