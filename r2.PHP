@@ -1,9 +1,15 @@
 <?php
 include_once "orderDetail.php";
+include_once "checkEmail.php";
 $Fullname=$_POST['FullName'];
 $id=$_POST['NationalID'];
 $dob=$_POST['Date'];
 $email=$_POST['Email'];
+$x=new checkEmail();
+if($x->checkEmail("orderDetails.txt",$email)!=1)
+{
+    echo "done";
+}
 $phone=$_POST['PhoneNum'];
 $Grade=$_POST['Grade'];
 $BirthCertificatee=$_POST['BC'];
@@ -21,6 +27,7 @@ $order->BirthCertificate=$BirthCertificatee;
 $order->age=$Age;
 $order->courses=$courses;
 $order->Detail($order);
-echo "done";
+
+
 
 ?>

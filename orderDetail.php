@@ -32,6 +32,7 @@ class orderDetails extends order implements OrderDetailsInterFace
             $filename="order.txt";
             $this->IDOrder=getLastId($filename, '~')+1;
             AddOrder($filename,$this->id,$this->Fullname,$this->courses,$this->IDOrder);
+            
     }
 	/**
 	 *
