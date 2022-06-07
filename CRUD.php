@@ -110,6 +110,8 @@ function addDDDD($fileName,$Email, $Password, $FullName,$DOB,$BirthCertificate,$
     $rec = $id . '~'  . $FullName. '~'. $Password . '~'.$Email . '~' .$DOB .'~'.$BirthCertificate.'~'.$age.'~'.$courses;
     if (searchUser($fileName, $FullName) == false)
     {
+        echo"ADD";
+
         StoreRecord($fileName, $rec);
         return true;
     } else 
