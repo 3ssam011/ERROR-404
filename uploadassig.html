@@ -4,17 +4,16 @@
 	<title>ImageUpload</title>
 </head>
 <body>
-	<form action="uploadassig.php" method="post" enctype="multipart/form-data">
-		<label>Username</label>
-		<input type="text" name="username">
+	<form action="ViewSchedule.php">
+		<button > See Your Courses </button>
+	</form>	
+	<form action="uploadassig.php" method="post" >
+		<label>Course Name</label><span><input type="text" name="CN" required></span>
+		<br>		
+		<input type="file" name="myf" required>
 		<br>
-		
-		<input type="file" name='myfile'>
-		<br/>
 		<input type="submit" value="upload">
 	</form>
+	<script src="uploadassig.js"></script>
 </body>
-</html>
-  
- 
-  
+</html>    
