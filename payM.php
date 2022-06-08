@@ -4,6 +4,9 @@ include_once"BookFess.php";
 include_once"BusFess.php";
 include_once"UniformFess.php";
 include_once"YearFess.php";
+include_once"PayCash.php";
+include_once"PayFawry.php";
+include_once"PayVisa.php";
 $Cost="";
 $total=0;
 if(isset($_POST['payf']))
@@ -52,4 +55,27 @@ if(isset($_POST['Book']))
 
 echo "Your Total is: ";
 echo $total;
+echo ("<br>");
+$u=$_POST['Pay'];
+if($u=="PayC")
+{
+    $x=new PayCash();
+    $x->IPay();
+    echo ("<br>");
+}
+
+if($u=="PayV")
+{
+    $x=new PAyVisa();
+    $x->IPay();
+    echo ("<br>");
+}
+
+if($u=="PayF")
+{
+    $x=new PayFawry();
+    $x->IPay();
+    echo ("<br>");
+}
+
 ?>
