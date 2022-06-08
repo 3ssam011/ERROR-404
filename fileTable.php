@@ -67,18 +67,21 @@ class file{
         {
             $line=fgets($myfile);            
             $array=explode("~",$line);
-            for($i=0;$i<count($array);$i++)
-            { 
                 if($array[1]==$record)
                 {
-                    if($i+1==count($array))   
+                    for($i=0;$i<count($array);$i++)
                     {
-                        echo "Your cources are: ";
-                        echo $array[$i];
-                        $ss=1;
+                        if($i+1==count($array))   
+                        {
+                            echo "Your cources are: ";
+                            echo $array[$i];
+                            $ss=1;
+                            
+                        }
                     }
-                }                     
-            }
+                    break;               
+                }                                     
+            
         }
         if($ss==0)
         {
