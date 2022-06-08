@@ -27,6 +27,8 @@ interface SecretaryInterFace{
 interface StudentInterFace{
     public function SeeGrades($subject,$id);
     public function SolveQuiz($subject,$id);
+    public function SeeNotification($id);
+    public function Uploadassignment($x,$ids);
 }
 
 interface TeacherInterFace{

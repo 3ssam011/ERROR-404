@@ -9,7 +9,7 @@ class user
   public $email;
   public $DOB;
   public function log($filename,$user)
-  {	 
+  {
 	$u=Encrypt($user->Password,1);	
     $line=getRowById($filename, '~',$user->ID);
 	//11 stud

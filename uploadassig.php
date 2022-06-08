@@ -1,10 +1,13 @@
 <?php 
-    if( isset($_POST['submit']) )
-    {
-        $name = "\r\n".$_POST['name'];
-        $file = fopen("uploadassig.txt",'+r');
-        fwrite($file,$name);
-        fclose($file);
-        echo "the has been uploaded";
-    }
+include_once "Student.php";
+$coursename=$_POST['CN'];
+$path=$_POST['myf'];
+$x=new student();
+$x->courses=$coursename;
+$x->subject=$path;
+session_start(); 
+$ids=$_SESSION['IDM'];
+$x->Uploadassignment($x,$ids)
+
+   
 ?>
