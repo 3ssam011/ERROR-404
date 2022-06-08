@@ -1,10 +1,10 @@
 <?php
 include_once"interfacePayFess.php";
 
-class BusFees implements MyFess{
+class UniformFess implements MyFess{
     public function PayFess()
     {
-        return 5000;
+        return 2000;
     }
 
     public function Details()
