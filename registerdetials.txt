@@ -1,2 +1,4 @@
 1~1~1~math~40
 2~1~6~history~40
+3~2~2~physics~40
+4~2~3~chemistry~40

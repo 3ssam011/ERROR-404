@@ -13,7 +13,8 @@ $ct;
     $ct=$manager->log($filename,$manager);
     if($ct==1)
     {
-    include_once("MCrud2.html");
+        header("Location:MCrud2.html");
+    //include_once("MCrud2.html");
     }
     else
     {
@@ -24,26 +25,33 @@ $ct;
         $ct=$student->log($filename,$student);
         if($ct==1)
         {            
-        include_once("SCrud.html");
+            header("Location:SCrud.html");
+        //include_once("SCrud.html");
         }
         else
         {
             $filename="teacher.txt";
-             $teacher=new teacher();
+            $teacher=new teacher();
             $teacher->ID=$ID;
-             $teacher->Password=$password;
+            $teacher->Password=$password;
             $ct=$teacher->log($filename,$teacher);
             if($ct==1)
             {
+            //header("Location:tCrud.html");
             echo"hi teacher";
+            $x=new file();
+             $x->filename="teacher.txt";
+            echo '<table border=1>';
+            $x->drawtable();
+            include_once "teacherDoes.html";
+            echo'<br>';
             //include_once("register.php");
             }
             else
             {
                 
                 echo'<div class="c">ERROR USerName or Password</div>';
-                include_once"index.php";
-                
+                include_once"index.php";                                
                 //include_once"errorlogin.php";
             }
         }
