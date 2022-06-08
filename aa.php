@@ -1,6 +1,8 @@
 <?php
 include_once"CRUD.php";
-$ID=$_POST['id'];
+session_start(); 
+$IDM= $_SESSION['IDM'];
+$ID=$IDM;
 $tmm=0;
 $filename="Notification.txt";            
 $Klam="your payment has been accepted";
