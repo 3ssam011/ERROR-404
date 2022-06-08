@@ -31,14 +31,20 @@ $ct;
         else
         {
             $filename="teacher.txt";
-             $teacher=new teacher();
+            $teacher=new teacher();
             $teacher->ID=$ID;
-             $teacher->Password=$password;
+            $teacher->Password=$password;
             $ct=$teacher->log($filename,$teacher);
             if($ct==1)
             {
-                //header("Location:tCrud.html");
+            //header("Location:tCrud.html");
             echo"hi teacher";
+            $x=new file();
+             $x->filename="teacher.txt";
+            echo '<table border=1>';
+            $x->drawtable();
+            include_once "teacherDoes.html";
+            echo'<br>';
             //include_once("register.php");
             }
             else
