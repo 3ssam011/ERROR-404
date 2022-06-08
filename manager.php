@@ -43,7 +43,7 @@ class manager extends user implements MangerInterFace
         {
             $filename="teacher.txt";
            
-           $line= getRowById($filename, '~', $$this->ID);
+           $line= getRowById("teacher.txt", '~', $this->ID);
            $arrayline=explode('~',$line);
             $record= $this->ID.'~'.$this->Fullname.'~'.$arrayline[2].'~'. $arrayline[3].'~'. $arrayline[4];
             DeleteRecord($filename, $record);
